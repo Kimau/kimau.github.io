@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss 
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+    version="2.0">
+    <channel>
+        <title>Flammable Penguins Podcast</title>
+        <description>A bunch of Games Developers discuss in depth issues of games development. Everything from Programming, Design, QA, Art and Production. You pick the topics and I will pull in some of my co-workers to discuss them.&lt;br /&gt;
+Originally launch as Game Programmers in Training a student podcast we have now graduated and are all working full time in the industry.</description>
+        <link>http://www.claire-blackshaw.com/</link>
+        <copyright>Free to Distribute without modification</copyright>
+        <language>en</language>
+        <pubDate>Wed, 2 Jun 2010 15:49:35 +0100</pubDate>
+        <itunes:subtitle>Discussions on Games Development</itunes:subtitle>
+        <itunes:summary>A bunch of Games Developers discuss in depth issues of games development. Everything from Programming, Design, QA, Art and Production. You pick the topics and I will pull in some of my co-workers to discuss them.
+Originally launch as Game Programmers in Training a student podcast we have now graduated and are all working full time in the industry.</itunes:summary>
+        <itunes:author>Flammable Penguins</itunes:author>
+        <itunes:owner>
+            <itunes:name>Claire Blackshaw</itunes:name>
+            <itunes:email>EvilKimau@gmail.com</itunes:email>
+        </itunes:owner>
+        <itunes:category text="Games &amp; Hobbies">
+            <itunes:category text="Video Games"/>
+        </itunes:category>
+        <itunes:keywords>Flammable Penguins, games, development, gamedev, programming, design, art, qa, production</itunes:keywords>
+        <itunes:image href="http://www.claire-blackshaw.com/images/iTunesImg.jpg"/>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:block>no</itunes:block>
+				<item>
+					<title>Podcast #5: Develop Technical Art</title> 
+					<link>http://www.claire-blackshaw.com/blog/2010/07/podcast-5-develop-technical-art/</link> 
+					<comments>http://www.claire-blackshaw.com/blog/2010/07/podcast-5-develop-technical-art/#comments</comments> 
+					<pubDate>Wed, 21 Jul 2010 08:49:45 +0000</pubDate> 
+					<enclosure url="http://www.claire-blackshaw.com/Audio/fppod05_artrnd.mp3" length="27288725" type="audio/mpeg" /> 
+					<guid>http://www.claire-blackshaw.com/Audio/fppod05_artrnd.mp3</guid>
+					<description>&lt;p&gt;I pull in Nick Lewis and Neil Richardson again to discuss some technical art talks from Develop. The main talks we focus on are Jolyon Webb from Blitz games RnD talk, and a talk about the EyePet from James Answer.&lt;/p&gt; 
+&lt;p&gt;We talk about RnD teams, and process. How to get artists into RnD and the advantages of doing more in Maya. Look at the advantages of Facial Bone Rigging vs Morph Target. The right right way or the hacked way. Re-targeting animations for systems like Move &amp;#038; Kinetic.&lt;/p&gt; 
+&lt;p&gt;Next time we will dive into the conversation we touched on at the end, of game drama.&lt;/p&gt; 
+
+Hope you enjoyed this week. Please provide &lt;b&gt;feedback&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Comment on the Blog Post&lt;/li&gt;
+&lt;li&gt;Poke me on Twitter &lt;a href=&quot;http://twitter.com/EvilKimau&quot;&gt;(@EvilKimau)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Suggest new topics on our &lt;a href=&quot;http://www.flammablepenguins.com/PodSuggest.html&quot;&gt;Topics Suggestion Page&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</description>
+            <itunes:subtitle>Develop Technical Art</itunes:subtitle>
+            <itunes:summary>I pull in Nick Lewis and Neil Richardson again to discuss some technical art talks from Develop. The main talks we focus on are Jolyon Webb from Blitz games RnD talk, and a talk about the EyePet from James Answer.</itunes:summary>
+            <itunes:duration>00:28:25</itunes:duration>
+            <itunes:author>Claire Blackshaw</itunes:author>
+            <itunes:keywords>flammable penguins, games, develop, art, rnd, technical, facial rig</itunes:keywords>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:block>no</itunes:block>
+        </item>
+				<item>
+					<title>Podcast #4: Balancing Art &amp; Code</title> 
+					<link>http://www.claire-blackshaw.com/blog/2010/07/podcast-4-balancing-art-code/</link> 
+					<comments>http://www.claire-blackshaw.com/blog/2010/07/podcast-4-balancing-art-code/#comments</comments> 
+					<pubDate>Sun, 11 Jul 2010 12:30:35 +0000</pubDate> 
+					<enclosure url="http://www.claire-blackshaw.com/Audio/fppod04_artcode.mp3" length="33892758" type="audio/mpeg" /> 
+					<guid>http://www.claire-blackshaw.com/Audio/fppod04_artcode.mp3</guid>
+					<description>&lt;p&gt;I pull in Nick Lewis and Neil Richardson to discuss balancing art and code needs. We talk about how to get the best out of both. How programmers and artists can get the most out of each other. Communication between teams, and how to manage it.&lt;/p&gt; 
+&lt;p&gt;We also divert onto terminology, UV scrolling, cell shading, palletisation, and Futurama.&lt;/p&gt; 
+
+Hope you enjoyed this week. Please provide &lt;b&gt;feedback&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Comment on the Blog Post&lt;/li&gt;
+&lt;li&gt;Poke me on Twitter &lt;a href=&quot;http://twitter.com/EvilKimau&quot;&gt;(@EvilKimau)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Suggest new topics on our &lt;a href=&quot;http://www.flammablepenguins.com/PodSuggest.html&quot;&gt;Topics Suggestion Page&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</description>
+            <itunes:subtitle>Balancing Art and Code</itunes:subtitle>
+            <itunes:summary>I pull in Nick Lewis and Neil Richardson to discuss balancing art and code needs. We talk about how to get the best out of both. How programmers and artists can get the most out of each other. Communication between teams, and how to manage it.</itunes:summary>
+            <itunes:duration>00:27:17</itunes:duration>
+            <itunes:author>Claire Blackshaw</itunes:author>
+            <itunes:keywords>flammable penguins, games, glo, art, code, balance</itunes:keywords>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:block>no</itunes:block>
+        </item>
+				<item>
+            <title>Interview: Aqua Attack</title>
+            <description>&lt;a href=&quot;http://www.facebook.com/pages/Aquattack/134415966571790&quot;&gt;
+&lt;img alt=&quot;Aqua Attack Facebook Page&quot; src=&quot;http://profile.ak.fbcdn.net/hprofile-ak-snc4/hs621.ash1/27521_134415966571790_6917_n.jpg&quot; title=&quot;Aqua Attack Facebook Page&quot; class=&quot;alignright&quot; width=&quot;200&quot; height=&quot;200&quot; /&gt; Aqua Attack Facebook Page&lt;/a&gt;
+So into the hot box I grab Tony Carter and DT to talk about our new release, Aqua Attack.
+Some topics we cover
+&lt;ul&gt;
+	&lt;li&gt;Micro Production vs Traditional Console&lt;/li&gt;
+	&lt;li&gt;Difficulty, Challenges and High scores&lt;/li&gt;
+	&lt;li&gt;Finding the Fun&lt;/li&gt;
+	&lt;li&gt;Digital Marketing&lt;/li&gt;
+	&lt;li&gt;Quality and Innovation balance&lt;/li&gt;
+	&lt;li&gt;Unique Art style&lt;/li&gt;
+	&lt;li&gt;Accessiblity and Colour Blindness&lt;/li&gt;
+	&lt;li&gt;Creating the Advert&lt;/li&gt;
+&lt;/ul&gt;
+
+Hope you enjoyed this week. Please provide &lt;b&gt;feedback&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Comment on the Blog Post&lt;/li&gt;
+&lt;li&gt;Poke me on Twitter &lt;a href=&quot;http://twitter.com/EvilKimau&quot;&gt;(@EvilKimau)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Suggest new topics on our &lt;a href=&quot;http://www.flammablepenguins.com/PodSuggest.html&quot;&gt;Topics Suggestion Page&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</description>
+            <link>http://www.claire-blackshaw.com/podcast.php</link>
+            <enclosure url="http://www.claire-blackshaw.com/Audio/fppod03_aquaattack.mp3" length="26205847" type="audio/mpeg"/>
+            <guid>http://www.claire-blackshaw.com/Audio/fppod03_aquaattack.mp3</guid>
+            <pubDate>Sun, 04 Jul 2010 14:00:00 +0100</pubDate>
+            <itunes:subtitle>Interview: Aqua Attack</itunes:subtitle>
+            <itunes:summary>So into the hot box I grab Tony Carter and DT to talk about our new release, Aqua Attack.</itunes:summary>
+            <itunes:duration>00:27:17</itunes:duration>
+            <itunes:author>Claire Blackshaw</itunes:author>
+            <itunes:keywords>flammable penguins, games, dev, aquaattack, interview</itunes:keywords>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:block>no</itunes:block>
+        </item>
+        <item>
+            <title>QA: The Life of a Tester</title>
+            <description>&lt;p&gt;So I pulled in our two Testers, Andy Bell &lt;a href=&quot;http://twitter.com/acidphire21&quot;&gt;(@acidphire21)&lt;/a&gt; and Stephen Rowe to talk about the joys and realities of being a games tester.&lt;/p&gt; 
+&lt;p&gt;Here is a rough order of things we talk about, no transcript I&amp;#8217;m afraid.&lt;/p&gt; 
+&lt;ul&gt; 
+&lt;li&gt;What Reality Bomb would you drop on someone looking to be a tester?&lt;/li&gt; 
+&lt;li&gt;The Best Parts of the job?&lt;/li&gt; 
+&lt;li&gt;Qualifications and Skills&lt;/li&gt; 
+&lt;li&gt;How do you keep things fresh and test in new ways?&lt;/li&gt; 
+&lt;li&gt;Software and Reporting Tools&lt;/li&gt; 
+&lt;li&gt;We talk about Glo and the unique challanges of QA internal IP&lt;/li&gt; 
+&lt;li&gt;What&amp;#8217;s the difference between a fix, feature or pipe dream?&lt;/li&gt; 
+&lt;li&gt;Difficulty how do you test that?&lt;/li&gt; 
+&lt;li&gt;How do you test a Tutorial for something you already understand?&lt;/li&gt; 
+&lt;li&gt;Motion Controller Testing&lt;/li&gt; 
+&lt;li&gt;Favourite console to test on?&lt;/li&gt; 
+&lt;li&gt;QA Pains and Nightmares?&lt;/li&gt; 
+&lt;li&gt;Worst console to test on?&lt;/li&gt; 
+&lt;li&gt;Doing builds and signing them off?&lt;/li&gt; 
+&lt;li&gt;NDA Pains&lt;/li&gt; 
+&lt;li&gt;Blame Day, and bouncing bugs&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;p&gt;Hope you enjoyed this week. Please provide &lt;b&gt;feedback&lt;/b&gt;&lt;/p&gt; 
+&lt;ul&gt; 
+&lt;li&gt;Comment on the Blog Post&lt;/li&gt; 
+&lt;li&gt;Poke me on Twitter &lt;a href=&quot;http://twitter.com/EvilKimau&quot;&gt;(@EvilKimau)&lt;/a&gt;&lt;/li&gt; 
+&lt;li&gt;Suggest new topics on our &lt;a href=&quot;http://www.flammablepenguins.com/PodSuggest.html&quot;&gt;Topics Suggestion Page&lt;/a&gt;.&lt;/li&gt; 
+&lt;/ul&gt;</description>
+            <link>http://www.claire-blackshaw.com/podcast.php</link>
+            <enclosure url="http://www.claire-blackshaw.com/Audio/fppod02_testing.mp3" length="27077521" type="audio/mpeg"/>
+            <guid>http://www.claire-blackshaw.com/Audio/fppod02_testing.mp3</guid>
+            <pubDate>Sun, 27 Jun 2010 12:49:35 +0100</pubDate>
+            <itunes:subtitle>QA: The Life of a Tester</itunes:subtitle>
+            <itunes:summary>So I pulled in our two Testers, Andy Bell (@acidphire21) and Stephen Rowe to talk about the joys and realities of being a games tester.</itunes:summary>
+            <itunes:duration>00:28:12</itunes:duration>
+            <itunes:author>Claire Blackshaw</itunes:author>
+            <itunes:keywords>flammable penguins, games, dev, design, nda, qa, Qualifications</itunes:keywords>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:block>no</itunes:block>
+        </item>
+        <item>
+            <title>Code: Cross Platform Development</title>
+            <description>We are back guys, the new site is launched and the first podcast is up.&lt;br /&gt;
+I grab Tim Kelsey &amp; Neil Richardson to discuss cross platform development. In a world with iPhones, PS3, Wii and PC how do we write code across all these systems.&lt;br /&gt;
+That question is put on the table and we hear two different approaches.</description>
+            <link>http://www.claire-blackshaw.com/podcast.php</link>
+            <enclosure url="http://www.claire-blackshaw.com/Audio/fppod01_crossplatform.mp3" length="35513729" type="audio/mpeg"/>
+            <guid>http://www.claire-blackshaw.com/Audio/fppod01_crossplatform.mp3</guid>
+            <pubDate>Sun, 20 Jun 2010 15:49:35 +0100</pubDate>
+            <itunes:subtitle>Code: Cross Platform Development</itunes:subtitle>
+            <itunes:summary>We are back guys, the new site is launched and the first podcast is up.
+I grab Tim Kelsey &amp; Neil Richardson to discuss cross platform development. In a world with iPhones, PS3, Wii and PC how do we write code across all these systems.
+That question is put on the table and we hear two different approaches.</itunes:summary>
+            <itunes:duration>00:36:59</itunes:duration>
+            <itunes:author>Claire Blackshaw</itunes:author>
+            <itunes:keywords>flammable penguins, games, dev, code, cross platform, sku, platform, ps3, wii, 360, iPhone, iPad</itunes:keywords>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:block>no</itunes:block>
+        </item>
+    </channel>
+</rss>

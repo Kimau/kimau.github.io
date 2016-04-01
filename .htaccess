@@ -1,0 +1,20 @@
+ErrorDocument 400 /error/400
+ErrorDocument 401 /error/401
+ErrorDocument 403 /error/403
+ErrorDocument 404 /error/404
+ErrorDocument 500 /error/500
+
+DirectoryIndex index.html
+
+<IfModule headers_module>
+    header set X-Clacks-Overhead "GNU Terry Pratchett"
+</IfModule>
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# For security reasons, Option all cannot be overridden.
+#Options All -Indexes
+Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes

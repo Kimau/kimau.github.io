@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Speaker Notes</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div id="pageNum"></div>
+
+<div id="notes" class="notes"></div>
+
+<script type="text/javascript">
+	var noteDiv = document.getElementById('notes');
+	var pageDiv = document.getElementById('pageNum');
+	var sourceWindow;
+
+	function receiveMessage(event)
+	{
+		sourceWindow = event.source;
+		pageDiv.innerHTML = event.data[0];
+		noteDiv.innerHTML = event.data[1];		
+	}
+
+
+	function handleBodyKeyDown(event) {
+		if(sourceWindow == undefined) {
+			noteDiv.innerHTML = "Awaiting Connection..."
+		}
+
+	  // If we're in a code element, only handle pgup/down.
+	  var inCode = event.target.classList.contains("code");
+
+	  switch (event.keyCode) {
+	    
+	    case 39: // right arrow
+	    case 40: // down arrow
+	    case 13: // Enter
+	    case 32: // space
+	    case 34: // PgDn
+	    	var loc = (location.host != "")?"http://" + location.host:"http://test.com";
+	    	sourceWindow.postMessage("next", loc);
+	      event.preventDefault();
+	      break;
+
+	    case 38: // up arrow
+	    case 37: // left arrow
+	    case 8: // Backspace
+	    case 33: // PgUp
+	    	var loc = (location.host != "")?"http://" + location.host:"http://test.com";
+	      sourceWindow.postMessage("prev", loc);
+	      event.preventDefault();
+	      break;
+	  }
+	};
+
+
+	window.addEventListener("message", receiveMessage, false);
+	document.addEventListener('keydown', handleBodyKeyDown, false);
+</script>
+</body>
+</html>

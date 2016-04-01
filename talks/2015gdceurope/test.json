@@ -1,0 +1,91 @@
+{
+  "feed": [
+    {
+      "targets": [
+        {
+          "meta": "NPXX51500_00",
+          "type": "TITLE_ID"
+        },
+        {
+          "meta": "elli",
+          "type": "ONLINE_ID",
+          "imageUrl": "https://static-resource.sp-int.community.playstation.net/avatar/default/DefaultAvatar.png"
+        },
+        {
+          "meta": "",
+          "type": "PLAYED_DESCRIPTION"
+        },
+        {
+          "meta": "SNE: for test",
+          "type": "PROVIDER_NAME"
+        },
+        {
+          "meta": "SNE_SYSTEM_TEST_GAME_3",
+          "type": "TITLE_NAME"
+        }
+      ],
+      "storyId": "fa719c80-bc51-11e4-8fd1-0250a71698e8",
+      "storyType": "PLAYED_WITH",
+      "source": {
+        "meta": "KimSDev",
+        "type": "ONLINE_ID",
+        "imageUrl": "https://static-resource.sp-int.community.playstation.net/avatar/3RD/UP40731301009_B479A733FF1EFD68AF30_L.png"
+      },
+      "smallImageAspectRatio": "1:1",
+      "date": "2015-02-24T18:21:40Z",
+      "relevancy": 0.0,
+      "commentCount": 0,
+      "likeCount": 0,
+      "titleId": "NPXX51500_00",
+      "liked": false,
+      "serviceProviderName": "SNE: for test",
+      "reshareable": true
+    },
+    {
+      "targets": [
+        {
+          "meta": "sigsegv",
+          "type": "ONLINE_ID",
+          "imageUrl": "https://static-resource.sp-int.community.playstation.net/avatar/WWS_A/A0030.png"
+        },
+        {
+          "meta": "NPXX51500_00",
+          "type": "TITLE_ID"
+        },
+        {
+          "meta": "elli",
+          "type": "ONLINE_ID",
+          "imageUrl": "https://static-resource.sp-int.community.playstation.net/avatar/default/DefaultAvatar.png"
+        },
+        {
+          "meta": "",
+          "type": "PLAYED_DESCRIPTION"
+        },
+        {
+          "meta": "SNE: for test",
+          "type": "PROVIDER_NAME"
+        },
+        {
+          "meta": "SNE_SYSTEM_TEST_GAME_3",
+          "type": "TITLE_NAME"
+        }
+      ],
+      "storyId": "38b3fc50-bc51-11e4-be16-0671ce4286c7",
+      "storyType": "PLAYED_WITH",
+      "source": {
+        "meta": "KimSDev",
+        "type": "ONLINE_ID",
+        "imageUrl": "https://static-resource.sp-int.community.playstation.net/avatar/3RD/UP40731301009_B479A733FF1EFD68AF30_L.png"
+      },
+      "smallImageAspectRatio": "1:1",
+      "date": "2015-02-24T18:16:15Z",
+      "relevancy": 0.0,
+      "commentCount": 0,
+      "likeCount": 0,
+      "titleId": "NPXX51500_00",
+      "liked": false,
+      "serviceProviderName": "SNE: for test",
+      "reshareable": true
+    }
+  ]
+}
