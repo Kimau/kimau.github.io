@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: Tumblr Fail</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="Tumblr Fail. So I wrote this long article about how I switched to an Atomic data model. How this is one possible implementation  of the proposed model. Different code would be written based o...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="Tumblr Fail" />
+      <meta name="twitter:description" content="Tumblr Fail. So I wrote this long article about how I switched to an Atomic data model. How this is one possible implementation  of the proposed model. Different code would be written based o..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    
+
+    
+    <meta property="og:title" content="Tumblr Fail" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2010/06/tumblr-fail/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="Tumblr Fail. So I wrote this long article about how I switched to an Atomic data model. How this is one possible implementation  of the proposed model. Different code would be written based o..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2010/06/tumblr-fail/"><h2 class="title"  itemprop="headline">Tumblr Fail</h2></a>
+    
+    <a class="postCat" href="/blog/cat/DataDrivenDialogueDissertation">Data Driven Dialogue Dissertation</a>
+    
+    <a class="postCat" href="/blog/cat/HobbyProjects">Hobby Projects</a>
+    
+    <a class="postCat" href="/blog/cat/Academic">Academic</a>
+    
+    <time class="date" datetime="Tue, 01 Jun 2010 22:18:01 &#43;0000" >1 June 2010</time>
+    <link rel="bookmark" href="blog/2010/06/tumblr-fail/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Tue, 01 Jun 2010 22:18:01 &#43;0000"/>
+    <meta itemprop="description" content="Tumblr Fail. So I wrote this long article about how I switched to an Atomic data model. How this is one possible implementation  of the proposed model. Different code would be written based o..." />
+    
+      <meta itemprop="image" content="/images/fp_twitter_tiny.png" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    <img src="http://kimau.tumblr.com/photo/1280/654322587/1/tumblr_l3ctu53zCk1qbssk5" /><br/><br/><h3>Tumblr Fail</h3>
+<p>So I wrote this long article about how I switched to an Atomic data model.</p>
+<p>How this is <strong>one possible implementation</strong> of the proposed model. Different code would be written based on language, memory and cpu restrictions. The implementation is a <strong>proof of concept</strong>. It does <strong>not define the model</strong>.</p>
+<h3>Atomic Model</h3>
+<p>The atomic model uses a damage protocal. It stores a value and the time that value was set.</p>
+<ul>
+<li>Testing point before any atom returns unkown.</li>
+<li>Testing between or at an atom returns last value change</li>
+<li>Testing past last atom return last known value</li>
+</ul>
+<h3>Blind Spot &amp; Discovery</h3>
+<p>This system means if a value change occurs and then is changed back before an agent observes it again then they are unaware of event. If however the observed value is different to the last known value then they agent knows an event has occurred and can inquire or investigate.</p>
+<p>Anyway I got to run and catch the bus, sorry for short version.</p>
+
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

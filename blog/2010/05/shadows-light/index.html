@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: Shadows &amp; Light</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="Lights, Camera, Action. Well lighting and shadows are a complex bag of trickery and maths. Basic Lighting is simple.Take a book outside into the sun now rotate the bugger around and throw...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="Shadows &amp; Light" />
+      <meta name="twitter:description" content="Lights, Camera, Action. Well lighting and shadows are a complex bag of trickery and maths. Basic Lighting is simple.Take a book outside into the sun now rotate the bugger around and throw..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    
+
+    
+    <meta property="og:title" content="Shadows &amp; Light" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2010/05/shadows-light/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="Lights, Camera, Action. Well lighting and shadows are a complex bag of trickery and maths. Basic Lighting is simple.Take a book outside into the sun now rotate the bugger around and throw..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2010/05/shadows-light/"><h2 class="title"  itemprop="headline">Shadows &amp; Light</h2></a>
+    
+    <a class="postCat" href="/blog/cat/FrankPetGame">Frank: Pet Game</a>
+    
+    <a class="postCat" href="/blog/cat/HobbyProjects">Hobby Projects</a>
+    
+    <a class="postCat" href="/blog/cat/Programming">Programming</a>
+    
+    <a class="postCat" href="/blog/cat/Shadow">Shadow</a>
+    
+    <a class="postCat" href="/blog/cat/Academic">Academic</a>
+    
+    <time class="date" datetime="Tue, 11 May 2010 11:51:45 &#43;0000" >11 May 2010</time>
+    <link rel="bookmark" href="blog/2010/05/shadows-light/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Tue, 11 May 2010 11:51:45 &#43;0000"/>
+    <meta itemprop="description" content="Lights, Camera, Action. Well lighting and shadows are a complex bag of trickery and maths. Basic Lighting is simple.Take a book outside into the sun now rotate the bugger around and throw..." />
+    
+      <meta itemprop="image" content="/images/fp_twitter_tiny.png" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    <h3>Lights Camera &amp; Action</h3>
+<p>Well lighting &amp; shadows are a complex bag of trickery and maths.</p>
+<p>Basic Lighting is simple. Take a book outside into the sun now rotate the bugger around and throw it. You will notice the amount of light on a surface can be measure as an angle between the light direction (from the sun) and the facing direction of the surface. A very cheap and easy calculation we love, called <strong>dot product</strong>.</p>
+<p>Now shadows are more complex. Light as a physics based thing in reality is a crazy thing which drove Einstein insane. For instance do you know light is affected by gravity so it actually bends around objects forming a very distinctive halo effect. So not only is it a ray cast but it&#8217;s a particle/wave which is affected by gravity fields. They also split up and bounce all over the place.</p>
+<p>Now in games we fake it, cause those calculations are really expensive, and most times we care more about whether a bullet hit a guys head.</p>
+<h3>Bake It</h3>
+<p>A cheap and simply trick is to back the shadows. This works well if the lights &amp; geometry don&#8217;t move much. Even in AAA games with more advanced systems, baked light maps do a lot of the heavy lifting.</p>
+<p>To bake it we basically do the calculation before the game runs. The simplest form is a flat planar map, some bake a projection map and some cases even bake shadow volumes. We can animate the baked textures and get some awesome effects.</p>
+<h3>Fake It</h3>
+<p>Okay so we have this bad guy, race car or some other object in the world. Well we can forgive a lot with our suspension of disbelief. What if we glued a &#8220;blob&#8221; shadow to the feet of bad guys or race car.</p>
+<p>You would be amazed how many games use this system to optimise thing and it looks great.</p>
+<h3>Flatten It</h3>
+<p>Well if we simplify light and ignore the bending, bouncing, and craziness of it, then we can treat it as a straight line from the light. Now we like planes, planes are really nice simple flat things.</p>
+<p>Okay so now we have this thing called the projection matrix which is part of the matrix of projecting a 3D object into a 2D image. Well if we use the same trick we can clone an object, then squish it into a projection and render it all black. We have a shadow, Peter Pan Style.</p>
+<h3>Deferred Volume</h3>
+<p>Okay well know in reality we need to drop shadows onto complex geometries. Now we also have this wonderful shader pipeline. Before we render the scene we render the entire world from the perspective of the light (as we would the camera). We then grab the depth buffer and save it. </p>
+<p>This needs to be done once for each light.</p>
+<p>Now this makes an image of how far the beam of light travels. Which we pass in to the next render pass, along with light matrix. Now if we take a point in space transform it by the Model-View-Projection as normal. Also Transform is by Model-Light-Projection. Then we compare the MLP read-out against the baked texture we can tell if the light reaches that point or not.</p>
+<p>Another way of doing Volume Shadows is to use Stencil Buffers, this is the traditional way to do things and how most shadow volumes have been done in the last 10 years.</p>
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

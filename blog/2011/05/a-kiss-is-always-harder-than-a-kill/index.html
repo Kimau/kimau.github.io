@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: A Kiss is always harder than a Kill</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="Games let us craft interactive systems in which we can play and explore. We play with limited rule-sets, physics, combat, squad based AI.">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="A Kiss is always harder than a Kill" />
+      <meta name="twitter:description" content="Games let us craft interactive systems in which we can play and explore. We play with limited rule-sets, physics, combat, squad based AI." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    
+
+    
+    <meta property="og:title" content="A Kiss is always harder than a Kill" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2011/05/a-kiss-is-always-harder-than-a-kill/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="Games let us craft interactive systems in which we can play and explore. We play with limited rule-sets, physics, combat, squad based AI." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2011/05/a-kiss-is-always-harder-than-a-kill/"><h2 class="title"  itemprop="headline">A Kiss is always harder than a Kill</h2></a>
+    
+    <a class="postCat" href="/blog/cat/Agent">Agent</a>
+    
+    <a class="postCat" href="/blog/cat/Ai">Ai</a>
+    
+    <a class="postCat" href="/blog/cat/Background">Background</a>
+    
+    <a class="postCat" href="/blog/cat/Dialogue">Dialogue</a>
+    
+    <a class="postCat" href="/blog/cat/Introduction">Introduction</a>
+    
+    <a class="postCat" href="/blog/cat/Social">Social</a>
+    
+    <a class="postCat" href="/blog/cat/SocialAgent">Social Agent</a>
+    
+    <time class="date" datetime="Fri, 27 May 2011 13:13:39 &#43;0000" >27 May 2011</time>
+    <link rel="bookmark" href="blog/2011/05/a-kiss-is-always-harder-than-a-kill/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Fri, 27 May 2011 13:13:39 &#43;0000"/>
+    <meta itemprop="description" content="Games let us craft interactive systems in which we can play and explore. We play with limited rule-sets, physics, combat, squad based AI." />
+    
+      <meta itemprop="image" content="/images/fp_twitter_tiny.png" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    <em>Originally written for #AltDevBlog: <a href="http://altdevblogaday.org/2011/05/27/a-kiss-is-always-harder-than-a-kill/">Link to Original Post</a></em>
+<p>Games let us craft interactive systems in which we can play and explore. We play with limited rule-sets, physics, combat, squad based AI, and a million other complex systems which give us a world to explore. Why then is one of the core human experiences, our social nature, all but missing from games?</p>
+
+<blockquote>Delete several paragraphs explaining where we are and why – assume audience knowledge</blockquote>
+
+<p>
+  <a href="#nutsbolts">Jump to Nuts &amp; Bolts discussion.</a>
+</p>
+
+<p>It all boils down to the fact in many ways the dialogue tree system we are so comfortable with is a local maxima in evolution of social interactions and needs to be discarded to make progress.</p>
+<p><img src="/images/Blog/agent.jpg"  width="164" height="226" class="alignright size-full " /></p>
+
+<p>Let’s take a brutal approach to a social interaction with a game agent. Now if we look at the three stages we can separate them nicely. Currently Inputs are stupidly simple, the game-pad offers the emotional range Morse code, no wonder the agent has trouble interacting. I’m less concerned here because of Kinetic and the brilliant academic research being conducted in this field.</p>
+<p>Our outputs however are extremely high quality with amazing voice acting, great visuals and delivery in our high end products. Though the methods we use aren’t scalable, and impractical for dynamic systems. Again there is great research in text-to-speech, automated lip syncing and similar technologies. So great strides being made in this area, but it will be the most painful transition to make as early version of this technology just can’t compete with the pre-baked polished deliveries we have at our disposal.</p>
+
+<p>While challenging I think both of those areas are moving forward at a good pace and will be solved in the near future.</p>
+<p>Then we get down to the gritty problem of the agent itself and the formulation of a response. Something we are getting very good at for say tactical combat simulation, where the inputs are better and the outputs rule governed. The dialogue tree however is at the end of the day a static graph (path manipulation through skill rolls or simple scripting doesn’t count) which creates a dumb but effective reflex agent.</p>
+
+<p>How can we grow this agent into a more intelligent system which allows for play and exploration? Can we make an agent who processes and develops an opinion of our actions rather than simply reacting to them by a cast iron static reflex system?</p>
+<p>Now while research is going on in this area its super fluffy and long range and does not get as much funding, mostly due to past developments in academia (see <a href="http://en.wikipedia.org/wiki/AI_winter">AI Winter</a>). One of the trickiest areas with an intelligent response is it requires some degree of knowledge, and knowledge representation is a damn tricky problem in the AI world.</p>
+
+<h3 id="nutsbolts">Nuts &amp; Bolts</h3>
+<p>The key point to the entire problem is that the agent in a game-world, unlike an agent trying to exist in “reality”, lives in a world where we know everything. Using this we can seed them with knowledge they require and a basic relationship network. Through this they can perceive and understand any event which is within the scope of the game world as we have provided them with a working knowledge base from which to understand it.</p>
+
+<p>This will allow us to make advances faster than our “reality” counter parts with quicker results as we have limited the scope of the problem space. Game developers like to cheat :) . It would also help if for the short term if we allow ourselves to use clunky or unappealing input or output systems which would not be acceptable in a commercial product :(</p>
+<p>Now I know this all sounds very fluffy and I sound like a crazy newbie who has discovered neural nets for the first time and has a naïve grin ear to ear. Though I do acknowledge the scope of this problem and I know the way forward is solving a lot of smaller problems to construct the tools to solve the larger. My dissertation which focussed on building a query/response framework along with the concept of 2nd degree authorship was the umpteenth step for me but the 1st solid piece of results.</p>
+
+<p>2nd Degree authorship had to be proven because I know that at the end of the day we do still want to write and construct narratives, rather than pure random simulation situations. I proved this with a fairly simple rule-based modifier system, one possible solution to procedural authorship of social interactions.</p>
+<p>Another requirement is data model which was generic enough to be expanded without being reworked. Again I manage to propose a fairly simple atomic model which would work for several game systems.</p>
+Finally I looked at building a query response model which could hold context and remain fairly generic. My research mostly hit dead ends until I considered representing a conversation as a tree, which provides context and a query as a path through that tree with null nodes. Response then could be sub-trees. XPath nicely fitted to this concept and I’m quite happy with the flexibility of the resulting system.
+<p>The full details up to this point can be read in <a href="https://docs.google.com/document/pub?id=1uxffH9h2Rt0_yhAmV27gZ3LHvDilgNLPFwiScy6v-i4">my dissertation here</a>.</p>
+
+<p>The next step is build a system in which agents can observe a self-contained play session, discuss it with a player entity or another agent and have a personality persists over multiple sessions. I had two possible planned prototypes to explore this concept. This is the thing I was struggling over for the last week.</p>
+<p>The detective prototype was appealing due to its lack of what we will call secondary work (not directly pertaining to the research). In this scenario we would use 2nd degree authorship aided by some procedural systems to generate a crime scenario. The player would then interrogate several agents to try build a picture of the truth. The agents would of course have a personal partial vision of the situation and be manipulating their responses to remove the appearance of guilt.</p>
+
+<p>This is an appealing prototype firmly built on my previous work with little need for secondary work. The two key concerns however were that it strongly depended on the strength of my generation algorithm and would therefore possible reach a dead-end or be handicapped if that system were inferior. It also caters to a fairly narrow spectrum of games, not having many traditional games systems interaction with the social model.</p>
+<p>So the second prototype is a tactical turn based shooter. A game I’ve been throwing around for the last year or so, in which the world is persistent but the missions are throw-away and players build reputation. The idea is that the agents (in this case infiltrating squad members, or defence agents) can debrief their controller after the mission about the events. These agents would be persistent over the game world getting hired, fired and killed.</p>
+
+<p>The main point here is the social information is mostly being scraped from a “live” game session in which one side (the defender) is not actually present. The downtime between missions however can be used to de-brief and casually talk about items. This means the game itself is not reliant on the social system, making it easier to have multiple versions, swap out or rewrite the social component without altering the game itself.</p>
+<p>Also the persistent nature of the agents mean if I leave a server running long enough distinct social ecosystems should hopefully evolve.</p>
+
+<p>Well that’s the plan; I’ll discuss more details in future posts and as the project advances. If you have any interest in this field or my research please do contact me I’m always looking for people to bounce ideas off and just share my crazy dream to cut-down the dialogue tree and burn its pitiful remains in the fires of progress.</p>
+
+Further ramblings on the matter are on my site, <a href="http://www.flammablepenguins.com/">FlammablePenguins.com</a>
+
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

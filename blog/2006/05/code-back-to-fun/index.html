@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: CODE : Back to Fun</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="Timer Needs fixing. Okay so I knuckled down and played the demo a bunch of times. Focusing once again on the combat. I kept forcing myself to envision this or that but in the end it just didn&#39;t fe...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="CODE : Back to Fun" />
+      <meta name="twitter:description" content="Timer Needs fixing. Okay so I knuckled down and played the demo a bunch of times. Focusing once again on the combat. I kept forcing myself to envision this or that but in the end it just didn&#39;t fe..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/Blog/blogphat10.jpg" />
+    
+
+    
+    <meta property="og:title" content="CODE : Back to Fun" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2006/05/code-back-to-fun/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/Blog/blogphat10.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="Timer Needs fixing. Okay so I knuckled down and played the demo a bunch of times. Focusing once again on the combat. I kept forcing myself to envision this or that but in the end it just didn&#39;t fe..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2006/05/code-back-to-fun/"><h2 class="title"  itemprop="headline">CODE : Back to Fun</h2></a>
+    
+    <a class="postCat" href="/blog/cat/Programming">Programming</a>
+    
+    <a class="postCat" href="/blog/cat/Shadow">Shadow</a>
+    
+    <time class="date" datetime="Fri, 26 May 2006 04:57:00 &#43;0000" >26 May 2006</time>
+    <link rel="bookmark" href="blog/2006/05/code-back-to-fun/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Fri, 26 May 2006 04:57:00 &#43;0000"/>
+    <meta itemprop="description" content="Timer Needs fixing. Okay so I knuckled down and played the demo a bunch of times. Focusing once again on the combat. I kept forcing myself to envision this or that but in the end it just didn&#39;t fe..." />
+    
+        <meta itemprop="image" content="/images/Blog/blogphat10.jpg" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    <img class="alignright" alt="CODE : Back to Fun" src="/images/Blog/blogphat10.jpg" />
+  
+    
+<blockquote>Timer Needs fixing</blockquote>
+<p>Okay so I knuckled down and played the demo a bunch of times. Focusing once again on the combat. I kept forcing myself to envision this or that but in the end it just didn't feel "fun". The Instant Manipulation thing makes sense but feels light and tacky. The game needed weight. So I've gone a step backwards looked at the system. Ripped the engine (combat block) to pieces and looked at stripped parts on the floor</p>
+<p>I thought let me play Shadowrun, let me read some Gibson, let me get back to my roots. Get back to the fun. After much throwing of toys and thinking this and that I decided to revert to the system I sideboarded during design which ways a weapons tray. In other words specific weapons with different function and form. Black helped me out here cause playing it lately made me remember how much fun shooting stuff can be.</p>
+<p>So in one step I simplified and complicated the system immensely. What this meant however was a complete reworking of the Gameblock. Which thankfully only took one night. Another blessing of modulated code.</p>
+<p>I also reverted to the matrix grid. Again going back to roots, I feel that the dots where just a place holder, but they needed to be gone. The Collision system defaults to bounding box but the object can specify a custom collision check if it requires.</p>
+<ul>
+ <li> Instant Manipulation Replaced with Projectiles </li>
+ <li> Attack / Hack Replaced by specific weapons </li>
+ <li> Child Rendering expand with GOB system </li>
+ <li> GOB system allows particle systems, and graphical sub routines</li>
+ <li> Temp particle trail written for projectiles </li>
+ <li> Game Block Base rewritten to support Actor / Message system </li>
+ <li> Projectile Collision Written on Bounding Box with LOD collision </li>
+ <li> Game Event Message system Implemented on a Block Basis </li>
+</ul>
+<p>Whats next? Well I'll write up on the Xmen movie, it deserves a good rant, and code wise I think I will be coding the first proper ICE.</p>
+
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

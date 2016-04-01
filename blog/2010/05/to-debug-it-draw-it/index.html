@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: To Debug it… Draw it</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="To Debug it, Draw it. Many people will tell you this but whenever you have a problem try to visualise it. This can be applied to almost everything (except cases where visualisation is a con...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="To Debug it… Draw it" />
+      <meta name="twitter:description" content="To Debug it, Draw it. Many people will tell you this but whenever you have a problem try to visualise it. This can be applied to almost everything (except cases where visualisation is a con..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    
+
+    
+    <meta property="og:title" content="To Debug it… Draw it" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2010/05/to-debug-it-draw-it/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="To Debug it, Draw it. Many people will tell you this but whenever you have a problem try to visualise it. This can be applied to almost everything (except cases where visualisation is a con..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2010/05/to-debug-it-draw-it/"><h2 class="title"  itemprop="headline">To Debug it… Draw it</h2></a>
+    
+    <a class="postCat" href="/blog/cat/FrankPetGame">Frank: Pet Game</a>
+    
+    <a class="postCat" href="/blog/cat/HobbyProjects">Hobby Projects</a>
+    
+    <a class="postCat" href="/blog/cat/Programming">Programming</a>
+    
+    <a class="postCat" href="/blog/cat/Shadow">Shadow</a>
+    
+    <a class="postCat" href="/blog/cat/Academic">Academic</a>
+    
+    <time class="date" datetime="Mon, 17 May 2010 19:05:51 &#43;0000" >17 May 2010</time>
+    <link rel="bookmark" href="blog/2010/05/to-debug-it-draw-it/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Mon, 17 May 2010 19:05:51 &#43;0000"/>
+    <meta itemprop="description" content="To Debug it, Draw it. Many people will tell you this but whenever you have a problem try to visualise it. This can be applied to almost everything (except cases where visualisation is a con..." />
+    
+      <meta itemprop="image" content="/images/fp_twitter_tiny.png" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    <img src="http://kimau.tumblr.com/photo/1280/607458611/1/tumblr_l2ksxrbNkX1qbssk5" /><br/><br/><h2>To Debug it&#8230; Draw it</h2>
+<p>Many people will tell you this but whenever you have a problem try to visualise it. This can be applied to almost everything (except cases where visualisation is a constraint, think advanced maths and quantum). So above you see the debug frustum.</p>
+<p>Well after fighting with all these various problems I&#8217;m thinking to myself&#8230; I need to double check my Frustrum. Five minutes to write and <strong>BAM</strong> problem is instantly visible. The problem I was debugging for 5 hours solved in 5 minutes.</p>
+<p>Printf &amp; Debug Draw rocks.</p>
+<h3>Problem: Shadows giving strange LightViewSpace results</h3>
+<p>Well the problem manifested in many ways. I was debugging shaders and tweaking render targets. Not to mention twiddling the depth bias so often that it was indecent.</p>
+<p>The problem was two fold. Firstly the sun view &amp; position didn&#8217;t match up. The result of a quick hack to get the sun in the right place, hacks bad. The second issue was todo with the scene bounds.</p>
+<p>The view matrix is built with a look-at call. Well the key is that the centre of the bounds must be equal to the look-at target. Why is this? Well draw some random shapes on an A4 page. Now draw a circle which contains all those objects. Now measure the radius of the circle and draw a square at the centre of the page with double that length per side.</p>
+<p>You see the problem, unless the circle is at the centre of the page their will be bits of it outside of the box, which means they won&#8217;t be shadowed.</p>
+<p>So you compensate for offset and increase the radius. To do this instead of measuring the radius of the circle measure the distance from the centre of the page to the furthest point of the circle.</p>
+<p>Before you ask we can&#8217;t move the box from the centre of the page as that would change the angle the light was coming from.</p>
+<p>Onwards and upwards.</p>
+
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

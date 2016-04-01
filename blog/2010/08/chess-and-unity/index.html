@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: Chess and Unity</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="So the big milestone for the Data Driven Dialogue project is in and frankly it needs some time to sit on the shelf while I gather my thoughts for a fresh assault. So I set about learning Unity, s...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="Chess and Unity" />
+      <meta name="twitter:description" content="So the big milestone for the Data Driven Dialogue project is in and frankly it needs some time to sit on the shelf while I gather my thoughts for a fresh assault. So I set about learning Unity, s..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/Blog/20080101184454chess_piece_-_black_king.jpg" />
+    
+
+    
+    <meta property="og:title" content="Chess and Unity" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2010/08/chess-and-unity/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/Blog/20080101184454chess_piece_-_black_king.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="So the big milestone for the Data Driven Dialogue project is in and frankly it needs some time to sit on the shelf while I gather my thoughts for a fresh assault. So I set about learning Unity, s..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2010/08/chess-and-unity/"><h2 class="title"  itemprop="headline">Chess and Unity</h2></a>
+    
+    <a class="postCat" href="/blog/cat/Chess">Chess</a>
+    
+    <a class="postCat" href="/blog/cat/HobbyProjects">Hobby Projects</a>
+    
+    <a class="postCat" href="/blog/cat/Learning">Learning</a>
+    
+    <a class="postCat" href="/blog/cat/Programming">Programming</a>
+    
+    <a class="postCat" href="/blog/cat/Unity">Unity</a>
+    
+    <a class="postCat" href="/blog/cat/Wip">Wip</a>
+    
+    <time class="date" datetime="Tue, 31 Aug 2010 09:28:56 &#43;0000" >31 August 2010</time>
+    <link rel="bookmark" href="blog/2010/08/chess-and-unity/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Tue, 31 Aug 2010 09:28:56 &#43;0000"/>
+    <meta itemprop="description" content="So the big milestone for the Data Driven Dialogue project is in and frankly it needs some time to sit on the shelf while I gather my thoughts for a fresh assault. So I set about learning Unity, s..." />
+    
+        <meta itemprop="image" content="/images/Blog/20080101184454chess_piece_-_black_king.jpg" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    <img class="alignright" alt="Chess and Unity" src="/images/Blog/20080101184454chess_piece_-_black_king.jpg" />
+  
+    
+<p>So the big milestone for the Data Driven Dialogue project is in and frankly it needs some time to sit on the shelf while I gather my thoughts for a fresh assault. So I set about learning Unity, something I've been interested in for a long time as a prototyping tool.</p>
+
+<p>The first thing I will say, and I found this with XNA as well, is 90% of the tutorials, resources ect... are worthless to anyone with any base level knowledge. Throw them out, you just need a quick run though the UI, and some quirks pages. All of 10 mins then just use your gathered experience and the reference docs from there on out.</p>
+<p>Now when learning new tech two of my favourite test projects are Pong and Tetris. I immediately dismissed these however as Unity made both very easy with its built in functionality, and I knew I wouldn't learn much because I wouldn't need to solve too many problems. I immediately settled on Chess as a well defined game because as anyone who has worked with high level world based tools knows.</p>
+<ul>
+	<li>Using any coordiante system for game logic not directly tied to render space is a pain</li>
+	<li>Object and Game logic conflict requiring you to split things up</li>
+	<li>State based animations and effects can be a pain</li>
+	<li>A simple chess AI is a nice little work-out</li>
+</ul>
+<p>So yeah I'm tinkering away with that at the moment. Slowly building more layers of complexity on top of it till I'm satisfied I know Unity well enough for a real project I have in mind.</p>
+
+<p>Oh and if you asked why I'm writing a boring Pong / Tetris / Chess game to learn Unity when I could be making Cool Idea #63? The answer is simple always learn new tech with a pre-defined and tested design. Otherwise you will compromise the design to avoid problems rather than be forced to overcome them. The goal is to learn the tech not to make a super awesome game.</p>
+
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: Machine Learning: Broken Data</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="So Ive been trying to normalise and format the data-set for consumption and processing. Some key points. Random Corruptions. Some Data is outside the specified range. The module code col...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="Machine Learning: Broken Data" />
+      <meta name="twitter:description" content="So Ive been trying to normalise and format the data-set for consumption and processing. Some key points. Random Corruptions. Some Data is outside the specified range. The module code col..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    
+
+    
+    <meta property="og:title" content="Machine Learning: Broken Data" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2010/04/machine-learning-broken-data/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="So Ive been trying to normalise and format the data-set for consumption and processing. Some key points. Random Corruptions. Some Data is outside the specified range. The module code col..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2010/04/machine-learning-broken-data/"><h2 class="title"  itemprop="headline">Machine Learning: Broken Data</h2></a>
+    
+    <a class="postCat" href="/blog/cat/HobbyProjects">Hobby Projects</a>
+    
+    <time class="date" datetime="Fri, 02 Apr 2010 10:56:15 &#43;0000" >2 April 2010</time>
+    <link rel="bookmark" href="blog/2010/04/machine-learning-broken-data/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Fri, 02 Apr 2010 10:56:15 &#43;0000"/>
+    <meta itemprop="description" content="So Ive been trying to normalise and format the data-set for consumption and processing. Some key points. Random Corruptions. Some Data is outside the specified range. The module code col..." />
+    
+      <meta itemprop="image" content="/images/fp_twitter_tiny.png" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    <p>So I&#8217;ve been trying to normalise and format the data-set for consumption and processing. Some key points</p>
+<ul>
+<li>Random Corruptions</li>
+<li>Some Data is outside the specified range</li>
+<li>The module code column needs to be ignored as there is no way to convert it into input which is expressed as a float.</li>
+<li>Many entries are missing as much as 50% of the inputs</li>
+<li>The extremely corrupt data makes up 20%</li>
+<li>That 20% contains 90% of the negative results</li>
+</ul>
+<p>My approach could be along several paths</p>
+<ol>
+<li>Missing Data is replaced by averaged data, hoping that it will not throw the results.</li>
+<li>Missing Inputs are not &#8220;fired&#8221; into the equation</li>
+</ol>
+<p>Both of these approaches assume that the missing data is neutral, and the lack is not in some way significant. Also they require you to correctly identify the neutral position.</p>
+<p>I don&#8217;t know what the best solution is so I have cloned the data down two paths</p>
+<ol>
+<li>Heavily corrupt data is removed from the training set, the test set uses averages established by training set for missing inputs.</li>
+<li>The inputs which tends to be missing or corrupt is removed, reducing the amount of inputs</li>
+</ol>
+<p>So which was is best, what do you do with missing or corrupt data?</p>
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

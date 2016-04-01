@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: Design Cheat Codes</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="Disclaimer: I’m not claiming games which use these mechanics are in any way lesser. I’m merely highlighting these as easy ways to sauce up a game. Think of it like add ketchup / mayo / vinegar to...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="Design Cheat Codes" />
+      <meta name="twitter:description" content="Disclaimer: I’m not claiming games which use these mechanics are in any way lesser. I’m merely highlighting these as easy ways to sauce up a game. Think of it like add ketchup / mayo / vinegar to..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    
+
+    
+    <meta property="og:title" content="Design Cheat Codes" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2011/03/design-cheat-codes/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="Disclaimer: I’m not claiming games which use these mechanics are in any way lesser. I’m merely highlighting these as easy ways to sauce up a game. Think of it like add ketchup / mayo / vinegar to..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2011/03/design-cheat-codes/"><h2 class="title"  itemprop="headline">Design Cheat Codes</h2></a>
+    
+    <a class="postCat" href="/blog/cat/Design">Design</a>
+    
+    <a class="postCat" href="/blog/cat/GameDesign">Game Design</a>
+    
+    <a class="postCat" href="/blog/cat/Tips">Tips</a>
+    
+    <time class="date" datetime="Mon, 28 Mar 2011 19:57:21 &#43;0000" >28 March 2011</time>
+    <link rel="bookmark" href="blog/2011/03/design-cheat-codes/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Mon, 28 Mar 2011 19:57:21 &#43;0000"/>
+    <meta itemprop="description" content="Disclaimer: I’m not claiming games which use these mechanics are in any way lesser. I’m merely highlighting these as easy ways to sauce up a game. Think of it like add ketchup / mayo / vinegar to..." />
+    
+      <meta itemprop="image" content="/images/fp_twitter_tiny.png" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    Disclaimer: <em>I’m not claiming games which use these mechanics are in any way lesser. I’m merely highlighting these as easy ways to sauce up a game. Think of it like add ketchup / mayo / vinegar to your chips</em>
+
+<img src="/images/Blog/2708252397_6f53c95e85-150x150.jpg"  width="150" height="150" class="alignright size-thumbnail " />
+
+Working on several projects which have been technically limited, or constrained by some unbreakable conditions I’ve come to appreciate these quick and simple ways to sauce up your game. Note that not all sauces work with all games.
+<h3>Make it Kinematic</h3>
+<img src="/images/Blog/3622740460_20475c4215-150x150.jpg"  width="150" height="150" class="alignright size-thumbnail " />
+<p>Movement is fun, controlling a kinetic object is juicy. Give items in your game mass and direct control.</p>
+Compare these two situations.
+<ol>
+	<li>Player selects a unit, then selects a destination, then confirms selection. Unit then moves along path.</li>
+	<li>Player directly controls unit with key controls</li>
+	<li>Player controls the unit acceleration and the unit has mass and inertia</li>
+</ol>
+<p>I guarantee if you prototype those three cases in a sandbox and give 10 people controllers then 3 will get the most play time, followed by 2 then 1. The simple truth is players like the feeling of weight and kineticism. A simpler real world example is give a child 3 objects: a light foam ball, a baseball and a jelly ball.</p>
+
+<h3>Secondary Motion</h3>
+<img src="/images/Blog/old_chain-150x150.jpg"  width="150" height="150" class="alignright size-thumbnail " />
+<p>Do all player actions cause secondary actions? So menu buttons have not only a hover and click state but an animation or action. When the player jumps, shoots or activates something in game they cause an action, then ensure that secondary actions happen around that action. For example if a gun fires, get some smoke, or bullet trail. A jump can have a nice animation on the avatar, dust at push off and landing. The activation of a button can press in then light up, the simple act of separating these makes the player more satisfied.</p>
+
+<h3>Particles and Shaders</h3>
+<img src="/images/Blog/2368646145_34e8986345_o-150x150.jpg"  width="150" height="150" class="alignright size-thumbnail " />
+<p>Yes we have all seen particles, bloom and cheap shader effects done to death, the reason? They work! Do you have a well balanced aesthetic in a gorgeous game? Then do not heap it on top, it will bury your work. But feeling bit lack lustre? Well then particles and a few cheap effects like rim lighting will help. </p>
+
+<h3>Physics</h3>
+<img src="/images/Blog/bullet_wall-150x150.png"  width="150" height="150" class="alignright size-thumbnail " />
+
+Does your game need physics, no? That’s great news you can use physics to add secondary motion and sparkles. You don’t need to worry about syncing it up over a network or worries about minor glitches because all it’s doing is making things look better.
+<h3>Leaderboards &amp; Awards</h3>
+
+<p>Will they make your game better, probably not? Will they mean player’s play longer or are more likely to make a purchase, challenge friends or talk about your game... YES!</p>
+Read <a href="http://altdevblogaday.org/2011/01/31/leaderboards-a-how-to-guide/">this article here</a> about implementing leaderboards (thanks to David Czarnecki).
+<h3>Brighter Colours</h3>
+
+<p>Well yes we like shiny things. Unless you’re producing a high quality well polished art style well then going for brighter bold colours, with clean lines will almost always increase eyeballs to player conversion. </p>
+Also bright bold, friendly cartoon colours have the broadest reach and appeal.
+<h3>Remove Options</h3>
+<img src="/images/Blog/11_23_18-broken-window_web-150x150.jpg"  width="150" height="150" class="alignright size-thumbnail " />
+
+Okay this one is not so much sauce as just general good advice. I’m adding it here because it’s easy to do and almost always helps. Make a list of all you features, options, abilities ect... Measure the usage in play tests. Remove the bottom third of the options. A simple thing, and it feels like your subtracting, which you are, but your adding value.
+<h3>Local Multiplayer</h3>
+
+<p>Okay if you planned it from day 1 and are confident you can deliver online multiplayer, then do it. It’s a great option but it’s not something you add to a project as sauce. Local Multiplayer however has none of those headaches. Whether hot-seat, simultaneous or asynchronous its’ all good.</p>
+If your AI is flaxy or your balance is weak, well the meta-game that evolves from multiplayer can often save you from that.
+<h3>Conclusion</h3>
+
+<p>These are just some of the cheap sauces you can add to a game which will spice it up. They are not a substitute for a quality product which is well designed. They are good trusted spices and sauces to spike the dish with. Don’t believe me; look at PopCap, Zynga, Mini-Clip and all the other casual games performing well.</p>
+
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

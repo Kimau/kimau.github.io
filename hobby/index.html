@@ -1,0 +1,869 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: Hobby</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="Flammable Penguins is the internet home of Claire Blackshaw, programmer and designer, on which all her stuff can be found and linked from.">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+
+    
+    <meta property="og:title" content="Hobby" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.com/hobby/" />
+    <meta property="og:locale" content="en_GB" />
+    
+
+    
+      <meta property="og:description" content="Flammable Penguins is the internet home of Claire Blackshaw, programmer and designer, on which all her stuff can be found and linked from." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <div id="hobbyProjList">
+  <h1>Code Hobby Projects</h1>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Block Project</h2>
+    <h3>A more long term work</h3>
+    <div><b>Tools</b>: C&#43;&#43; with Psybrus</div>
+    
+    <div><b>Links</b>: <span><a href="https://github.com/Psybrus/Psybrus">Psybrus Engine</a></span></div>
+    
+    
+    <div class="hobDescPar">So I&#39;m not talking about this project much. It&#39;s been a very long term thing but for a range of reasons I want to get this off the ground. for a range of reasons.</div>
+    
+    <div class="hobDescPar">One interesting point is I&#39;m finally working on Psybrus, an engine built by @Neilogd</div>
+    
+    <div class="hobDescPar">We used to work together so I&#39;m familiar with his code and I like the way his code works. Psybrus gives me a stable, small and extendable basis from which to build out this project and the future projects. This project will have a few deadlines and milestones, and I&#39;ll post progress but the big picture and purpose shall remain behind the curtain on this one.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/cubed/screencapture_2015-10-15-00-02-21.gif')" ng-click="showImage(images/cubed/screencapture_2015-10-15-00-02-21.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/cubed/screencapture_2015-10-18-21-45-45.gif')" ng-click="showImage(images/cubed/screencapture_2015-10-18-21-45-45.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/cubed/screencapture_2015-10-21-00-30-41.gif')" ng-click="showImage(images/cubed/screencapture_2015-10-21-00-30-41.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/cubed/screencapture_2015-10-21-00-44-48.gif')" ng-click="showImage(images/cubed/screencapture_2015-10-21-00-44-48.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/cubed/screencapture_2015-10-21-00-48-13.gif')" ng-click="showImage(images/cubed/screencapture_2015-10-21-00-48-13.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/cubed/screencapture_2015-10-25-22-35-32.gif')" ng-click="showImage(images/cubed/screencapture_2015-10-25-22-35-32.gif);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>Psybrus</a>
+      
+      <a>C&#43;&#43;</a>
+      
+      <a>WIP</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Go Camera</h2>
+    <h3>Camera Capture with Drive Upload</h3>
+    <div><b>Tools</b>: Go</div>
+    
+    <div><b>Links</b>: <span><a href="https://github.com/Kimau/GoCam">GitHub</a></span></div>
+    
+    
+    <div class="hobDescPar">Currently I&#39;m using 3rd party software to uploaded some security web cam footage. Sadly I have the Belkin cameras which don&#39;t play nice with 3rd party software and have some documented software exploits. I&#39;ve hardened my network and tweaked with the cameras which account for most the problems though now once your on the wifi you can get to the camera feeds but I&#39;m okay with that level of security.</div>
+    
+    <div class="hobDescPar">Previously I&#39;ve used OpenCV for image work but its C libs and dependicies would muck up this pure go project with platform specific dependicies which I don&#39;t like. I might still go with OpenCV approach but otherwise I might implement some image functions into a Go lib. This is more an experiment than anything as I do have a 3rd party solution. It did provide some interesting learnings around MJPEG.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>Go</a>
+      
+      <a>Camera</a>
+      
+      <a>Experiment</a>
+      
+      <a>WIP</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Drive Tracker</h2>
+    <h3>Google Drive Word Counter</h3>
+    <div><b>Tools</b>: Go</div>
+    
+    <div><b>Links</b>: <span><a href="https://github.com/Kimau/GoDriveTracker">GitHub</a></span></div>
+    
+    
+    <div class="hobDescPar">So Ducky has been using a Google Drive script to track her daily writing. It&#39;s buggy I&#39;ve had to fix it and honestly it doesn&#39;t do all the things I would like. For a few reasons like plugging into external API and tracking non-google drive wirting in the future I started writing a Go Tool which plugged into the Google Drive API and buildinga word count report. It&#39;s been interesting to plug GoLang into Google API which is obviously clean and slowly building some report stuff. This is a project I chip away at and I&#39;m mostly happy with it. Also used BoltDB as my first GoLang with DB work. Useful to learn from.</div>
+    
+    <div class="hobDescPar">I want to put in a Twitter api hook and multi-user support. Make it a bit more robust so I can pop it onto a Raspberry Pi and forget about it.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>Go</a>
+      
+      <a>Google Drive</a>
+      
+      <a>Experiment</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Alley Cat GBJam</h2>
+    <h3>Demaking the DOS Classic into Game Boy Graphics</h3>
+    <div><b>Tools</b>: C&#43;&#43; with SDL2</div>
+    
+    <div><b>Links</b>: <span><a href="https://github.com/Kimau/GBJam15">GitHub</a></span></div>
+    
+    
+    <div class="hobDescPar">Part of the #GBJam I decided to build something for Pebble watch but also to start playing with SDL2 in a real way. This is part of my ongoing move away from Unity and similiar for my home projects. For the range of reasons I covered in my Wizard post. It was a good experience but I spent a lot of time muddling with Android toolchains and getting workflow stuff setup.</div>
+    
+    <div class="hobDescPar">I hope to come back and finish this before the year end but what&#39;s more I have a stable small SDL project base to work from for Jams and other projects which is really useful for me.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/alleycat/alleycat.gif')" ng-click="showImage(images/alleycat/alleycat.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/alleycat/alleycat2.gif')" ng-click="showImage(images/alleycat/alleycat2.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/alleycat/alleycat3.gif')" ng-click="showImage(images/alleycat/alleycat3.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/alleycat/alleycat4.gif')" ng-click="showImage(images/alleycat/alleycat4.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/alleycat/alleycat5.gif')" ng-click="showImage(images/alleycat/alleycat5.gif);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>GBJam</a>
+      
+      <a>SDL2</a>
+      
+      <a>C&#43;&#43;</a>
+      
+      <a>WIP</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>KBot</h2>
+    <h3>Go Twitch IRC Bot</h3>
+    <div><b>Tools</b>: Go</div>
+    
+    
+    <div class="hobDescPar">So KBot is an interesting project which I want to take up for both personal and work reasons but honestly it&#39;s been pushed to the back burner.</div>
+    
+    <div class="hobDescPar">It&#39;s been an interesting learning project as we still haven&#39;t deployed anything with Go at scale yet. So all these learnings are good and its a good sandbox on which to launch a bunch of other stuff. Also a lot of the code has been lifted into my other Go projects.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>Go</a>
+      
+      <a>WIP</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>FP Website generation</h2>
+    <h3>Simple Go Tool to generate and manage site</h3>
+    <div><b>Tools</b>: Go</div>
+    
+    <div><b>Links</b>: <span><a href="https://github.com/Kimau/FPWebTool">GitHub</a></span></div>
+    
+    
+    <div class="hobDescPar">Sick and tired of Wordpress updates, limits and such I moved the site over to mostly AngularJS.</div>
+    
+    <div class="hobDescPar">That caused issues with indexing and other structured data problems, so I decided to look at Jekyll</div>
+    
+    <div class="hobDescPar">I happened to be working with Go at work and thought the template libs so solid that it would be trivial to do in Go.</div>
+    
+    <div class="hobDescPar">It had the added advantage of any custom logic being simple to add.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>Go</a>
+      
+      <a>Website</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Cards Aginst Paper</h2>
+    <h3>Cvh Cloud Implementation</h3>
+    <div><b>Tools</b>: Python on Google App Engine</div>
+    
+    <div><b>Links</b>: <span><a href="https://github.com/Kimau/FPWebTool">GitHub</a></span></div>
+    
+    
+    <div class="hobDescPar">Implemented a Cards against Humanity style game on Web &amp; Mobile using Google App Engine and Javascript frontend.</div>
+    
+    <div class="hobDescPar">Didn&#39;t productionise it because the game depends heavily on its social element.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>Python</a>
+      
+      <a>Javascript</a>
+      
+      <a>Google App Engine</a>
+      
+      <a>Cards</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>LD31 Snowman &lt;3 Kitty</h2>
+    <h3>Snow particles in Javascript</h3>
+    <div><b>Tools</b>: Javascript</div>
+    
+    <div><b>Links</b>: <span><a href="https://github.com/Kimau/ludumdare/tree/master/LD31%20Entire%20Game%20on%20One%20Screen">GitHub</a><a href="http://ludumdare.com/compo/ludum-dare-31/?action=preview&amp;uid=15">Ludum Dare Page</a><a href="http://kimau.github.io/LD31/">Playable</a></span></div>
+    
+    
+    <div class="hobDescPar">Snowman loves Kitty is a small story about a Snowman falling in love with a kitty in a snowy backyard that is INCOMPLETE :( Made for Ludumdare 31.</div>
+    
+    <div class="hobDescPar">Tools: Javascript, Photoshop, no libs</div>
+    
+    <div class="hobDescPar">The snow sim was working great till I discovered a few limitations which I banged my head against most of Sunday so it&#39;s just a TOY. Experiment and play around. I&#39;ll try upload a non-compo version later with complete story on a different link.</div>
+    
+    <div class="hobDescPar">Also for anyone wondering I just had to save the most down voted themes: There is no floor, Love, Kittens &amp; Snowman as well as entire game on one screen ;)</div>
+    
+    <div class="hobDescPar">Whoops</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>Javascript</a>
+      
+      <a>LudumDare</a>
+      
+      <a>LD31</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Global Game Jam 2015</h2>
+    <h3>Failed Attempt at Text War Game</h3>
+    <div><b>Tools</b>: NodeJS</div>
+    
+    <div><b>Links</b>: <span><a href="https://github.com/Kimau/ggj15">GitHub</a></span></div>
+    
+    
+    <div class="hobDescPar">The concept was a text game of the sort playable in SSH but done in the browser.</div>
+    
+    <div class="hobDescPar">You were to command an army but entirely using textual reports which are done with natural language and imprescise.</div>
+    
+    <div class="hobDescPar">This was based around how difficiult would it be for a real medival general in a tent without a birds eye view.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>NodeJS</a>
+      
+      <a>Global Game Jam</a>
+      
+      <a>Website</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>LD29 Beneath the Surface</h2>
+    <h3>Unity Digging for Dinosaurs</h3>
+    <div><b>Tools</b>: Unity</div>
+    
+    
+    <div class="hobDescPar">One of the more fun LudumDare games I&#39;ve made you dig up Dinosaurs from the earth in a very calming game. The digging aways layers of earth presented an interesting problem in data and mesh generation. After fighting with Unity shader model I reverted back to a 2D version of the gameplay.</div>
+    
+    <div class="hobDescPar">After the weekend I discovered the sub mesh method which wasn&#39;t working due to texture sampler not being supported in Shader Model 3 was because I was in HLSL 3 and didn&#39;t have some console specific stuff I was used to. Post Comp I am looking at both a DX11 and Ray Marching implementation. This is my current tinker project when I get a few hours.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/LD29/media_cap.gif')" ng-click="showImage(images/LD29/media_cap.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/LD29/media_done.gif')" ng-click="showImage(images/LD29/media_done.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/LD29/media_menu.gif')" ng-click="showImage(images/LD29/media_menu.gif);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/LD29/media_score.gif')" ng-click="showImage(images/LD29/media_score.gif);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>LudumDare</a>
+      
+      <a>LD29</a>
+      
+      <a>Unity</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>LD28 You Only Get One</h2>
+    <h3>2D Unity Climbing Game</h3>
+    <div><b>Tools</b>: Unity</div>
+    
+    
+    <div class="hobDescPar">Climb up a burning building to save as many people from the top of the building. I used this as a chance to explore the 2D toolchain and new animation tools. Lost most of the weekend to building the 2D character and art fiddling more than I should of. Also the building generation is just a noise algorithm it really should be game defined tiles. Overall I&#39;m happy with the gameplay in the time and it was a good way to learn 2D workflow on Unity.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/Code/climber.png')" ng-click="showImage(images/Code/climber.png);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>LudumDare</a>
+      
+      <a>LD28</a>
+      
+      <a>Unity</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>LD26 Minimalist</h2>
+    <h3>Unity Android Game with One Touch</h3>
+    <div><b>Tools</b>: Unity on Android</div>
+    
+    
+    <div class="hobDescPar">Three colours and one touch try convey a series of platforming and stealth levels. The jumping was quite floaty in the game which broke the feel of the gameplay. Though it was interesting doing a minimalist mobile game. The stark colour schemes and art style meant no time was lost to content creation. Most the time was spent trying to get Unity physics to work just right.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/LD26/15-shot0.png')" ng-click="showImage(images/LD26/15-shot0.png);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/LD26/15-shot1.png')" ng-click="showImage(images/LD26/15-shot1.png);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/LD26/15-shot2.png')" ng-click="showImage(images/LD26/15-shot2.png);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/LD26/15-shot3.png')" ng-click="showImage(images/LD26/15-shot3.png);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/LD26/15-shot4.png')" ng-click="showImage(images/LD26/15-shot4.png);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>LudumDare</a>
+      
+      <a>LD26</a>
+      
+      <a>Unity</a>
+      
+      <a>Android</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>LD25 You Are the Villian</h2>
+    <h3>Javascript game made only on a Chromebook</h3>
+    <div><b>Tools</b>: HTML5 &#43; Bare Javascript</div>
+    
+    
+    <div class="hobDescPar">In an empty flat with no furniture a mobile phone and a Chromebook, can you make a game in a weekend? Turns out yes! It was entirely developed in Chrome then uploaded in bursts through my phone. The game is a management of criminals running jobs. The gameplay failed mostly as the flow wasn&#39;t very intuitive.</div>
+    
+    <div class="hobDescPar">Working with plain javascript provided a poor framework and my tools provided a greater challenge than expected though if I were to do it again it would be much smoother.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/Code/money.png')" ng-click="showImage(images/Code/money.png);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>LudumDare</a>
+      
+      <a>LD25</a>
+      
+      <a>Javascript</a>
+      
+      <a>HTML</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>LD23 Tiny World</h2>
+    <h3>Javascript Life of a Mosquito</h3>
+    <div><b>Tools</b>: HTML5 &#43; Bare Javascript</div>
+    
+    
+    <div class="hobDescPar">I wanted to explore what it was like working with Javascript without any libraries and develop directly in Chrome. Following the previous experiments in Javascript I wanted a more visual art driven experience. The theme was a bit tricky but I really enjoyed exploring the life cycle of a mosquito with different controls. I wanted to branch out into a more experimental style.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/Code/moz0.png')" ng-click="showImage(images/Code/moz0.png);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/Code/moz1.png')" ng-click="showImage(images/Code/moz1.png);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/Code/moz2.png')" ng-click="showImage(images/Code/moz2.png);"></div>
+      
+      <div class="thumbImg" style="background-image: url('images/Code/moz3.png')" ng-click="showImage(images/Code/moz3.png);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>LudumDare</a>
+      
+      <a>LD23</a>
+      
+      <a>Javascript</a>
+      
+      <a>HTML</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>LD19 Discovery</h2>
+    <h3>Love Letter and 1st physical Jam game</h3>
+    <div><b>Tools</b>: Unity</div>
+    
+    
+    <div class="hobDescPar">The idea was to make a Jam game as a love letter. The first physical game jam I did at Cambridge CB2. The concept was to build an abstract mesh from a message, then break it into pieces to form a puzzle. The player then rebuilt the puzzle revealing the message. It was going to be the first time I said openly expressed my love to my girlfriend.</div>
+    
+    <div class="hobDescPar">The Concept was solid but unfamiliarity with Unity, and the physical game jam environment where my downfalls. You get a lot less time due to travelling to the venue and socialising. Also again the choice of an unknown tool introduced too large a hurdle for a 48 hour game jam. This did lead to further exploration of breaking up meshes using Delaunay triangulation which I have on my interesting list of things to explore.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>LudumDare</a>
+      
+      <a>LD19</a>
+      
+      <a>C#</a>
+      
+      <a>Unity</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>LD15 Caverns</h2>
+    <h3>Interesting Procedural Cave Generator</h3>
+    <div><b>Tools</b>: Python with pyglet</div>
+    
+    
+    <div class="hobDescPar">After failing to complete LD14 I returned to PTK and C&#43;&#43; for speed and familiarity. The procedural cave system proved to be quite successful providing fun and interesting layouts. The gameplay was light but I really enjoyed this title.</div>
+    
+    <div class="hobDescPar">I used a form of cellular automaton to generate the caves. Starting with noise successive generation breed open rooms and shapes. With every few generations some custom logic to ensure spaces are linked and providing interesting combination of open space and maze by linking or seperating spaces.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/Code/caverns.png')" ng-click="showImage(images/Code/caverns.png);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>LudumDare</a>
+      
+      <a>LD15</a>
+      
+      <a>C&#43;&#43;</a>
+      
+      <a>PTK</a>
+      
+      <a>Procedural</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>LD14 Advancing Wall of Doom</h2>
+    <h3>Explored using OpenGl with Python</h3>
+    <div><b>Tools</b>: Python with pyglet</div>
+    
+    
+    <div class="hobDescPar">An incomplete entry it was a fun exploration of Python with GL. Pyglet is a lite windowing system, which allows easy OpenGl usage. The premise was a neverending platformer as you climbed a tower.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>LudumDare</a>
+      
+      <a>LD14</a>
+      
+      <a>Python</a>
+      
+      <a>Pyglet</a>
+      
+      <a>OpenGl</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>LD8 Swarms</h2>
+    <h3>My 1st game in 48 hours </h3>
+    <div><b>Tools</b>: C&#43;&#43; with PTK</div>
+    
+    
+    <div class="hobDescPar">The first LudumDare entry it was the the first time I had made a game in 48 hours and I really enjoyed the format. I&#39;ve since become a frequent entrant into LudumDare. I find the format invigorating. Developing a game in 48 hours with no prior code or art provides an interesting challenge. Much like a musical game or script workshop you abandon structure to be creative within a tightly constrained deadline.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/Code/worm.png')" ng-click="showImage(images/Code/worm.png);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>LudumDare</a>
+      
+      <a>LD8</a>
+      
+      <a>C&#43;&#43;</a>
+      
+      <a>PTK</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Podcast Teaching Games</h2>
+    <h3>Teaching Tool for Podcast</h3>
+    <div><b>Tools</b>: C&#43;&#43; with PTK</div>
+    
+    
+    <div class="hobDescPar">While doing a game development podcast in University I was tutoring some students. I came up with the idea of building games as part of the podcast and using the source to teach concepts. I started with a simple Coin Flip game.</div>
+    
+    <div class="hobDescPar">Then I built a text based Checkers game with them, then showing them how to port it to PTK. Showing how simple graphics and input could be done.</div>
+    
+    <div class="hobDescPar">Following Checkers I used LifeLab, Conway Games of Life, to show how emergent gameplay behaviours can emerge from a simple ruleset.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/Code/checkers.png')" ng-click="showImage(images/Code/checkers.png);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>C&#43;&#43;</a>
+      
+      <a>PTK</a>
+      
+      <a>Teaching</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Beat My Bot</h2>
+    <h3>Squad Based AI Tournament from University</h3>
+    <div><b>Tools</b>: C&#43;&#43; on Provided Framework</div>
+    
+    <div><b>Links</b>: <span><a href="http://docs.google.com/View?id=dg7hg7f6_94g3dq23hj">Google Doc</a></span></div>
+    
+    
+    <div class="hobDescPar">Northumbria University hosted a Capture the Flag AI competition for the games students. Building on a game framework you had to provide AI for a squad in a capture the flag game using a set of parameters.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/Code/beatbot.gif')" ng-click="showImage(images/Code/beatbot.gif);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>C&#43;&#43;</a>
+      
+      <a>AI</a>
+      
+      <a>University</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Boid Bounce</h2>
+    <h3>Flocking AI Experiment</h3>
+    <div><b>Tools</b>: C&#43;&#43; with OpenGl</div>
+    
+    
+    <div class="hobDescPar">Simple 3D Boid simulation to explore flocking behaviours, written in OpenGl.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>C&#43;&#43;</a>
+      
+      <a>OpenGl</a>
+      
+      <a>Experiment</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>72 Hour: Magnets</h2>
+    <h3>Puzzle game built on Magnets</h3>
+    <div><b>Tools</b>: C&#43;&#43; with PTK</div>
+    
+    
+    <div class="hobDescPar">Puzzle game built around three colour magnets. The player controls the ball by switching the magnets colour making it ignore one colour, be attracted to another then repulsed by the third. Visualising the fields was fun, and it provided some interesting puzzles. The complexity of which is made much more difficult by the pace of play.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/Code/72mag.png')" ng-click="showImage(images/Code/72mag.png);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>C&#43;&#43;</a>
+      
+      <a>72hr Jam</a>
+      
+      <a>PTK</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>68k Space Invaders</h2>
+    <h3>Build Game on 68000 ASM</h3>
+    <div><b>Tools</b>: 68k ASM</div>
+    
+    
+    <div class="hobDescPar">Not wanting to spend hours in the real-time lab before I understood the language I used Easy68k to familiarize myself with 68k ASM. The project slowly built up. I had to remember the old way to draw sprites and I had some creative whitespace and memory stomping errors. In the end the project was a success. I didn&#39;t add sound simply because the Easy68k sound was not old school or anything like the real thing.</div>
+    
+    <div class="hobDescPar">The next project was Pong on the real target machine. This project has helped me loads but it is more fun on the real hardware where I can use a pedometer and timer interrupts.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/Code/asm.png')" ng-click="showImage(images/Code/asm.png);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>Assembly</a>
+      
+      <a>University</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Frank</h2>
+    <h3>Simple Pet Game</h3>
+    <div><b>Tools</b>: C# on XNA</div>
+    
+    <div><b>Links</b>: <span><a href="/data/FrankPetGame.pdf">PDF</a></span></div>
+    
+    
+    <div class="hobDescPar">Simple Pet Game where you took care of Frank on a little island. It was part of an exploration of social AI for my dissertation.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>C#</a>
+      
+      <a>AI</a>
+      
+      <a>University</a>
+      
+      <a>Experiment</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Keep It Simple Stupid</h2>
+    <h3>Theatre Experiment about Audience</h3>
+    <div><b>Tools</b>: C&#43;&#43; with PTK</div>
+    
+    
+    <div class="hobDescPar">Looking at how to model Audience behaviours has always been interesting. Games like Tony Hawk Pro Skater and similar abstract an audience response through a combo system. KISS explored trying to pace a play and stick to a three act structure by delivering well timed lines. The experiment failed due to exploding complexity of content but it was an interesting exploration.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>C&#43;&#43;</a>
+      
+      <a>PTK</a>
+      
+      <a>Experiment</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Nokia Catapult</h2>
+    <h3>Build Wii Engine from Scratch</h3>
+    <div><b>Tools</b>: Python on Symbian Nokia N95</div>
+    
+    <div><b>Links</b>: <span><a href="/data/NokiaCata.pdf">Nokia Data</a></span></div>
+    
+    
+    <div class="hobDescPar">Using the built in accelerometers to make a little game. Think of it as turning your phone into a Wii-mote. Analyse and use Python to develop a simple application. Analyse and use the data captured by a motion device. Define and use the motion device to recognise gestures. Develop a simple application using skills gained.</div>
+    
+    <div class="hobDescPar">The choice of platform and device was a well made one. The device is well suited for rapid prototyping and Python is still flexible.  The libraries are well structured and light weight enough that minimal effort is required to start. The amount of feedback a mobile platform can provide while doing these motions is limited. This coupled with the limiting processing power means as a motion gaming platform it is limited. The use of motion in other applications however is still a valid.</div>
+    
+    <div class="hobDescPar">The motion sensor is a limited device which does not do what sales teams claim. The processing of motion is several degrees more complex than traditional controllers. This is compounded if a neural net is used. The range of motion detection is very limited. This is due to both the low range of the device and lack of absolute positioning.</div>
+    
+    <div class="hobDescPar">If a game is made with the limits in mind a successful game mechanic can be achieved. The gaming audience is more likely to notice the limited patterns of this style of motion controller as time passes. This receptiveness could have a strong negative affect on games which could turn unique control systems into simple formulaic inputs.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>Python</a>
+      
+      <a>Motion</a>
+      
+      <a>Symbian</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>Crazy Golf</h2>
+    <h3>Build Wii Engine from Scratch</h3>
+    <div><b>Tools</b>: C&#43;&#43; on Wii</div>
+    
+    
+    <div class="hobDescPar">Second year project for university module. We basically had to write a game on the Gamecube. However as I was working fulltime getting into the labs during office hours was an issue. So I got permission to do a Wii Title instead.</div>
+    
+    <div class="hobDescPar">Basically it was put-put. The level was generated from a heightmap, and textured. Simple system kept track of score. Basic graphics, motion controls and sound in place.</div>
+    
+    <div class="images">
+      
+      <div class="thumbImg" style="background-image: url('images/Code/crazygolf.png')" ng-click="showImage(images/Code/crazygolf.png);"></div>
+      
+    </div>
+    <div class="tags">
+      
+      <a>C&#43;&#43;</a>
+      
+      <a>Wii</a>
+      
+      <a>University</a>
+      
+    </div>
+  </article>
+  
+  <article class="codeHobProj" ng-repeat="hob in hp">
+    <h2>AI Disseration</h2>
+    <h3>Exploring Data Driven Dialouge</h3>
+    <div><b>Tools</b>: C&#43;&#43; and Python</div>
+    
+    <div><b>Links</b>: <span><a href="http://goo.gl/6F8Xtd">Google Doc</a></span></div>
+    
+    
+    <div class="hobDescPar">To create a data-driven system for use in the games industry that will generate complete social interactions using seeded scenarios which expands based on player interactions.</div>
+    
+    <div class="hobDescPar">Coming from a roleplaying background I&#39;m never satisfied with Dialouge Trees and their limitations. So I looked atomising interations and making them in such a way that AI can process and understand them. This massive undertaking was first dreamed up about five years ago. The project was attempted in a loose way and concepts investigated many times. Most times the attempts weren&#39;t even named. Two noticable pre-cursors were KISS (A dramatic simulation) and TavernQuest (a tavern generator which made DTs for NPCs).</div>
+    
+    <div class="hobDescPar">As my Supervisor points out I&#39;m in great danger of falling the trap of the 80&#39;s where they tried to solve the problem of everything. The important difference is every aspect of a game world is known and defined. So we can cheat a little, because we know everything.</div>
+    
+    <div class="hobDescPar">This is an ongoing personal project and I see the disseration hand in as a first important solid step.</div>
+    
+    <div class="images">
+      
+    </div>
+    <div class="tags">
+      
+      <a>University</a>
+      
+      <a>Dissertation</a>
+      
+    </div>
+  </article>
+  
+</div>
+<div id="imagePrev" class="hidden" ng-click="hideImage();">
+</div>
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

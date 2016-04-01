@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: Leaky Abstractions</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="In a world of frameworks, simple to use engines and added layers of abstraction we are in danger of leaky abstraction, both in design and programming. While t...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="Leaky Abstractions" />
+      <meta name="twitter:description" content="In a world of frameworks, simple to use engines and added layers of abstraction we are in danger of leaky abstraction, both in design and programming. While t..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    
+
+    
+    <meta property="og:title" content="Leaky Abstractions" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2012/07/leaky-abstractions/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="In a world of frameworks, simple to use engines and added layers of abstraction we are in danger of leaky abstraction, both in design and programming. While t..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2012/07/leaky-abstractions/"><h2 class="title"  itemprop="headline">Leaky Abstractions</h2></a>
+    
+    <a class="postCat" href="/blog/cat/Altdevblog">Altdevblog</a>
+    
+    <a class="postCat" href="/blog/cat/Programming">Programming</a>
+    
+    <a class="postCat" href="/blog/cat/Design">Design</a>
+    
+    <a class="postCat" href="/blog/cat/GameDesign">Game Design</a>
+    
+    <a class="postCat" href="/blog/cat/Maths">Maths</a>
+    
+    <time class="date" datetime="Fri, 06 Jul 2012 12:56:09 &#43;0000" >6 July 2012</time>
+    <link rel="bookmark" href="blog/2012/07/leaky-abstractions/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Fri, 06 Jul 2012 12:56:09 &#43;0000"/>
+    <meta itemprop="description" content="In a world of frameworks, simple to use engines and added layers of abstraction we are in danger of leaky abstraction, both in design and programming. While t..." />
+    
+      <meta itemprop="image" content="/images/fp_twitter_tiny.png" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    Originally written for <a href="http://www.altdevblogaday.com/2012/07/06/leaky-abstractions/">#AltDevBlogADay</a>
+<p>In a world of frameworks, simple to use engines and added layers of abstraction we are in danger of leaky abstraction, both in design and programming. While the concept is familiar to me a friend introduced me to the phrase at the pub recently as well as directing me to this <a href="http://www.joelonsoftware.com/articles/LeakyAbstractions.html">brilliant article by Joel Spolsky</a>. I wanted to publicise and explore this in the context of gaming using a graphics programming and motion design problem.</p>
+
+<p>Do you understand Dot product? No, I mean really have you sat down with the math and do you remember it? I thought I had but recently while using Unity on a home project I naively called two functions in separate loops. One to find which side of a plane a point is, the other was how far from the plane the point was. Filtering the points by side and then calculating the distance in a follow-up step.</p>
+<p>Moments later while debugging an unrelated but nearby piece of code I looked at the two functions and a brick of memory flew from a lecture of the past and knocked over my stupid forgetful self. Those familiar with the math have already facepalmed and laughed at my mistake, the math to figure out which side of a plane you are on is the same as that used to calculate the distance. The “side function” merely throws away the distance and returns the sign, leading to a leaky abstraction.</p>
+
+<p>It should be noted that in the documentation of these functions, names or a surface level inspection you are not able to discover this fact. In a world where more and more layers of complexity are being shielded from us we are in great danger of not only throwing away useful information but repeating work already done. Increased battery drain, cloud server costs or wasted cycles being the symptoms of this ailment.</p>
+<p>Designing for motion or futuristic inputs suffers a similar problem. Too often we see people using keyboard or keypad events with little understanding of the device delivers that from electrical signal to interrupt into a OS message pump or state then exposing that to our program. Often poor understanding introduces additional latency but this issue is magnified when we start using more complex input systems which we see as magic boxes.</p>
+
+<p>The Sony Move controller uses gyroscope, accelerometer and camera feed to derive the position of the controller. The camera using the visible size of a known object, the ball, to do a distance calculation. Accelerometers are inherently noisy. What many people who use the system naively forget is that the data is pre-filtered and sampled over an interval. The default value reallying quite heavily on the visibility of the ball.</p>
+<p>This filter step does introduce latency to the user control and in the cases where the ball is obscured the data can spike or drift in certain ways. Certain settings, or approaches can cause an undocumented increase in latency. What should a motion designer be concerning themselves with here you ask? Well when designing gestures where the ball tracking is lost or even partially obscured for a frame is harder than say the Wii or Six-Axis controller. One previous title I worked on around the launch window of the Move, the primary control worked better swinging about the six-axis controller than the Move.</p>
+
+<p>Following this trend at Dare to be Digital last year we saw and impressive use of Kinect but every team was almost entirely relying on skeleton based systems. This is the "3rd stage" of Kinect processing and the system with the highest latency. Many of the control systems they were using could have worked off raw depth data feed, which could have been evaluated faster. Though in Microsoft’s defence they do a brilliant job of exposing the raw feed and stages of processing to developers for optimisation or use where you only care about simpler, faster motions.</p>
+<p>So to come full circle from point/plane math to futuristic input systems we will be increasingly surrounded by layers of abstractions from both a coding and a design view. It is important we continue to "de-mystify" these systems, in order to better use them. Though in a call to developers of frameworks, middleware and similar products I have an old and familiar request.</p>
+
+<p>Document your leaky abstractions, publish your process and enable your developers.</p>
+
+All they will do with that information is make you look good.
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

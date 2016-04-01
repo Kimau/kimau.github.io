@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: Feedback in Production</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="As game developers we know the importance of Feedback in our games for players, but so often we forget the importance of feedback for ourselves. Implementing...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="Feedback in Production" />
+      <meta name="twitter:description" content="As game developers we know the importance of Feedback in our games for players, but so often we forget the importance of feedback for ourselves. Implementing..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    
+
+    
+    <meta property="og:title" content="Feedback in Production" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2011/04/feedback-in-production/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="As game developers we know the importance of Feedback in our games for players, but so often we forget the importance of feedback for ourselves. Implementing..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2011/04/feedback-in-production/"><h2 class="title"  itemprop="headline">Feedback in Production</h2></a>
+    
+    <a class="postCat" href="/blog/cat/Altdevblog">Altdevblog</a>
+    
+    <a class="postCat" href="/blog/cat/Professional">Professional</a>
+    
+    <time class="date" datetime="Fri, 29 Apr 2011 10:37:16 &#43;0000" >29 April 2011</time>
+    <link rel="bookmark" href="blog/2011/04/feedback-in-production/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Fri, 29 Apr 2011 10:37:16 &#43;0000"/>
+    <meta itemprop="description" content="As game developers we know the importance of Feedback in our games for players, but so often we forget the importance of feedback for ourselves. Implementing..." />
+    
+      <meta itemprop="image" content="/images/fp_twitter_tiny.png" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    Originally written for <a href="http://altdevblogaday.org/2011/04/28/feedback-in-production/">#AltDevBlogADay</a>
+<p>As game developers we know the importance of Feedback in our games for players, but so often we forget the importance of feedback for ourselves. Implementing good feedback loops in your production cycle can be just as important.</p>
+
+<p>Two stories highlight this for me. The first is personal, a team for a game I was working on was having the critical bug count communicated to them daily in scrums, and key issues pinned to the wall. The engagement with the lists was low, until one programmer asked for a graph. Since the coloured stack graph went up enjoyment is much higher and conversations happen around the graph (and supporting lists).</p>
+<p>Edit: Found Source for this article<a href="http://www.gamasutra.com/view/feature/4111/dirty_coding_tricks.php?print=1">"You Wouldn't Like Me When I'm Angry" by Nick Waanders</a></p>
+
+<p>In an article I read a programmer spoke about a game they were working on and the artists not paying attention to the frame rate. The number just didn’t matter to them. So he replaced the fps counter with a series of photos of his face: Happy, content, angry. The improvement was immediate, because the information was visual and the granularity reduced for clearer communication.</p>
+<p><strong>General Rule</strong>: For every role in the production cycle question what information is critical or a good performance indicator and try to expose feedback in the most appropriate format and make the feedback loop as short as possible.</p>
+
+<p>Claire :)</p>
+<p>Below are just some quick ideas and areas to try hit</p>
+<h2>Programmers</h2>
+<ul>
+	<li><strong>Compile or Pack times</strong>: The length of this feedback loop directly impacts the productivity of your team.</li>
+	<li><strong>Code Reviews</strong>: Not only for quality of code but is the individual receiving adequate feedback on their work. A mentor system or pair programming system can help here, don’t try dump it all on your leads, they won’t have time. Resulting in a breakdown on the feedback loop.</li>
+	<li><strong>Feedback on Failure</strong>: Are your error messages consistent throughout the business? Can you implement a dump system, or display a call-stack. In the case of failure are you providing the coder with enough quality information to solve the issue? In larger companies, does the error communicate which area of responsibility the error is occurring in?</li>
+	<li><strong>Live Analytics</strong>: In the case of your programmers working on live systems do they have access to realtime easy to process visual data on player patterns, which functions are performance heavy or what areas of suffering above average load?</li>
+</ul>
+<h2>Artists</h2>
+<ul>
+	<li><strong>Immediate Preview</strong>: As an artist can I, without support from others, quickly view my assets in-game.</li>
+	<li><strong>Assets Streaming</strong>: Can an artist update an asset without rebooting the game, removing the need to navigate menus and get to the point of the game where they can see the asset.</li>
+	<li><strong>Performance Data</strong>: Do I get understandable visual feedback on texel to pixel ratio, overdraw density or other technical data in a fashion that is accessible to me?</li>
+</ul>
+<h2>Designers</h2>
+<ul>
+	<li><strong>Real-time Variables:</strong> Can a designer alter values in game on the fly to see how they feel?</li>
+	<li><strong>Stats Data:</strong> Can I receive feedback from any play-through of the game done by QA, Focus Testers, or coders in the form of visual reports or recorded numbers?</li>
+	<li><strong>Live Analytics</strong>: Do they have access to real-time easy to process visual data on player patterns, purchases of items, drop of rates and general user flow?</li>
+	<li><strong>UI Heatmap</strong>: Can the game generate a heat-map of cursor flow?</li>
+</ul>
+<h2>QA</h2>
+<ul>
+	<li><strong>Build Dates</strong>: Can I quickly visual identify the build number and date?</li>
+	<li><strong>Bug Feedback</strong>: When a bug is returned to QA am I provided with enough information to reassess the bug and is the communication clear?</li>
+</ul>
+<h2>Production Staff</h2>
+<ul>
+	<li><strong>Work Done</strong>: Does a report quickly identify work done and work remaining at present?</li>
+	<li><strong>Visible Build</strong>: Can I access a recent working version of the game?</li>
+	<li><strong>Time Spent</strong>: Can I identify areas of the work which have a higher than expected cost, or large investment in them.</li>
+	<li><strong>Graphs</strong>: It sounds cliché, but a picture is worth a 1000 words. Live graphs prefably on a web system internally will make you life so much easier.</li>
+	<li><strong>Team Time: </strong>Is there a frequent structured process for me to receive feedback from the team and provide them with feedback?</li>
+</ul>
+<h2>Board, CEO, VP, and other Stake Holders</h2>
+<ul>
+	<li><strong>Visible Progress</strong>: Am I able to see visible progress in an easy visual format?</li>
+	<li><strong>Team Issues</strong>: Are HR items (such as sickness), morale, rework to content, areas of uncertainty communicated with progress reports?</li>
+	<li><strong>Target visibility: </strong>Am I aware of the big goals for the next development target(s) and able to assign a confidence level to delivery?</li>
+</ul>
+
+
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

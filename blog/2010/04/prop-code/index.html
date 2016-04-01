@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: Prop Code</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="Updated the document from my notes, and a few use cases. The main break throughs and choices are below. All the prop data will be created from an XML file a...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="Prop Code" />
+      <meta name="twitter:description" content="Updated the document from my notes, and a few use cases. The main break throughs and choices are below. All the prop data will be created from an XML file a..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    
+
+    
+    <meta property="og:title" content="Prop Code" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2010/04/prop-code/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/fp_twitter_tiny.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="Updated the document from my notes, and a few use cases. The main break throughs and choices are below. All the prop data will be created from an XML file a..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2010/04/prop-code/"><h2 class="title"  itemprop="headline">Prop Code</h2></a>
+    
+    <a class="postCat" href="/blog/cat/FrankPetGame">Frank: Pet Game</a>
+    
+    <a class="postCat" href="/blog/cat/Programming">Programming</a>
+    
+    <a class="postCat" href="/blog/cat/Academic">Academic</a>
+    
+    <time class="date" datetime="Thu, 29 Apr 2010 23:26:20 &#43;0000" >29 April 2010</time>
+    <link rel="bookmark" href="blog/2010/04/prop-code/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Thu, 29 Apr 2010 23:26:20 &#43;0000"/>
+    <meta itemprop="description" content="Updated the document from my notes, and a few use cases. The main break throughs and choices are below. All the prop data will be created from an XML file a..." />
+    
+      <meta itemprop="image" content="/images/fp_twitter_tiny.png" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    <img src="http://kimau.tumblr.com/photo/1280/559351421/1/tumblr_l1nszwVpUS1qbssk5" /><br/><br/><p>Updated the document from my notes, and a few use cases.</p>
+<p><a target="_blank" href="http://docs.google.com/View?id=dg7hg7f6_172f7kvh6d5">Clean Version Here</a></p>
+<p>The main break throughs and choices are below</p>
+
+<blockquote>Prop Code</blockquote>
+
+<p>All the prop data will be created from an XML file and parsed into a dictionary which is indexed by Prop Code. All new props must be created from either Cloning or using a Prop Code to create an instance</p>
+
+<blockquote>Unique Tag</blockquote>
+
+<p>This means only one instance of any prop using this tag exist. This solves a lot of problems with upgrade items and tools and such. Not to mention the main building</p>
+
+<blockquote>Timers &amp; Buttons</blockquote>
+
+<p>Possible the biggest break through was the throwing away of a production prop sub class and moving to a timer and button system. Basically when the button is pushed by Frank or the Timer expires a delegate is called which is assigned via data.</p>
+<p>Using this system, and the concept of morphing into a new object we can model tree&#8217;s growing, ovens and a few other things. The other attraction is Frank can examine objects based on Timers and Buttons. Which lays nicely into some AI reactions I have planned.</p>
+
+<blockquote>The Rest&#8230;</blockquote>
+
+<p>Loads of small things I realised and a few things I&#8217;ve made note of edge cases and the like. For instance containers ValidInput, and IsFull solves quite a few problems.</p>
+
+<p>I have more to say but I&#8217;m going to leave it there.</p>
+
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

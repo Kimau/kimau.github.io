@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="/">
+
+    
+    <title>Flammable Penguins: LD code into the Frank project</title>
+    <meta name="author" content="Claire Blackshaw">
+    
+      <meta name="description" content="Right Ive moved over most the nice LD code into the Frank project, cleaned up a few things here and there. Made it play nice with the World Manager system. First thing I did after getting...">
+    
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@EvilKimau" />
+      <meta name="twitter:title" content="LD code into the Frank project" />
+      <meta name="twitter:description" content="Right Ive moved over most the nice LD code into the Frank project, cleaned up a few things here and there. Made it play nice with the World Manager system. First thing I did after getting..." />
+      <meta name="twitter:image" content="http://www.flammablepenguins.com/images/Blog/tumblr_l1fzb2aq3d1qbssk5o1_400.jpg" />
+    
+
+    
+    <meta property="og:title" content="LD code into the Frank project" />
+    <meta property="og:site_name" content="Flammable Penguins"/>
+    <meta property="og:url" content="http://www.flammablepenguins.comblog/2010/04/ld-code-into-the-frank-project/" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="og:image" content="http://www.flammablepenguins.com/images/Blog/tumblr_l1fzb2aq3d1qbssk5o1_400.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://www.facebook.com/Kimau" />
+    <meta property="article:publisher" content="https://www.facebook.com/flammablepenguins" />
+    
+
+    
+      <meta property="og:description" content="Right Ive moved over most the nice LD code into the Frank project, cleaned up a few things here and there. Made it play nice with the World Manager system. First thing I did after getting..." />
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Share|Lato:400,700,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mainPageTop">
+    <header id="topHead">
+      <div class="topFade"></div>
+      <h1>Flammable Penguins</h1>
+      <h2>Claire Blackshaw's Forest of Fun</h2>
+      <div class="face"></div>
+    </header>
+
+    <div id="navBar">
+      <h2><a href="/">About</a></h2>
+      <h2><a href="/blog/">Blog</a></h2>
+      <h2><a href="/hobby/">Hobby Projects</a></h2>
+      <h2><a href="/job/">Games Career</a></h2>
+    </div>
+  </div>
+
+
+  
+  <div id="mainPageBlock">
+  <article
+  class="blog"
+  itemscope itemtype="http://schema.org/Article">
+  <header>
+    <a href="blog/2010/04/ld-code-into-the-frank-project/"><h2 class="title"  itemprop="headline">LD code into the Frank project</h2></a>
+    
+    <a class="postCat" href="/blog/cat/FrankPetGame">Frank: Pet Game</a>
+    
+    <a class="postCat" href="/blog/cat/LudumDare">Ludum Dare 48</a>
+    
+    <a class="postCat" href="/blog/cat/Programming">Programming</a>
+    
+    <a class="postCat" href="/blog/cat/Academic">Academic</a>
+    
+    <time class="date" datetime="Sun, 25 Apr 2010 18:01:00 &#43;0000" >25 April 2010</time>
+    <link rel="bookmark" href="blog/2010/04/ld-code-into-the-frank-project/" /></link>
+    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    By
+      <img class="smallRound" itemprop="image" src="/images/claireBig.jpg" alt="Photo of Claire Blackshaw" />
+      <span itemprop="name">Claire Blackshaw</span>
+    </div>
+    <meta itemprop="datePublished" content="Sun, 25 Apr 2010 18:01:00 &#43;0000"/>
+    <meta itemprop="description" content="Right Ive moved over most the nice LD code into the Frank project, cleaned up a few things here and there. Made it play nice with the World Manager system. First thing I did after getting..." />
+    
+        <meta itemprop="image" content="/images/Blog/tumblr_l1fzb2aq3d1qbssk5o1_400.jpg" />
+    
+
+  </header>
+  <div class="body" itemprop="articleBody">
+  
+    <img class="alignright" alt="LD code into the Frank project" src="/images/Blog/tumblr_l1fzb2aq3d1qbssk5o1_400.jpg" />
+  
+    
+<p>Right I&#8217;ve moved over most the nice LD code into the Frank project, cleaned up a few things here and there. Made it play nice with the World Manager system.</p>
+<p>First thing I did after getting the camera controls in was apply the debug renderer to the stupid animation problem I&#8217;m having. Now to clarify both the Worm and Hand have translation and scale applied. In every way other than complexity they are the same.</p>
+<p>As you see the hand bones are in the correct place. What you are seeing are the World Transforms which then are multiplied by the Inverse Bind Pose before being based to the shader. So the job is to narrow it down as follows, I&#8217;ve eliminated the <strike>strike-out</strike> words.</p>
+<ul>
+  <li>Data
+    <ul>
+      <li>Art in Max</li>
+      <li>Exportor</li>
+    </ul>
+  </li>
+  <li>Code
+    <ul>
+      <li>Content Processor</li>
+      <li>Setup of Bind Pose &amp; Inverse</li>
+      <li><strike>Animation of Bones</strike></li>
+      <li><strike>Computation of World Transforms</strike></li>
+    </ul>
+  </li>
+  <li>Shader</li>
+</ul>
+<p>SVN Comments below which sums it up</p>
+<p><span> </span></p>
+<ul>
+  <li>SphereHelper.cs is a Spherical Coordinate Helper class</li>
+  <li>PolarHelper.cs does the same for Polar Coords</li>
+  <li>A DebugRenderer component makes life easier</li>
+  <li>New Cameras
+    <ul>
+      <li>OrbitCamera for 1st &amp; 3rd person Sphere Camera</li>
+      <li>TargetCamera for tracking a node from another node</li>
+    </ul>
+  </li>
+  <li>General clean up in GameplayScreen</li>
+  <li>Moved GameplayScreen input helper functions to InputState</li>
+  <li>Added Some input helpers to InputState</li>
+  <li>Cleaned up Debug Camera controls</li>
+</ul>
+<p>So any clues on this animation bug?</p>
+
+  </div>
+</article>
+
+  </div>
+
+  
+  <script type="text/javascript">
+
+  
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15579957-1', 'flammablepenguins.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
